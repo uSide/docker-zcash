@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 
 RUN apt-get update && apt-get install -y apt-transport-https wget gnupg2
 RUN wget -qO - https://apt.z.cash/zcash.asc | apt-key add -
